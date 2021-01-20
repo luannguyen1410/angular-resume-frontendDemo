@@ -1,0 +1,17 @@
+<div class="sidenav">
+    <h1 class="text-center">My Info</h1>
+    <img src="assets/img/profile.jpg" class="rounded-circle profile-img">    
+    <div *ngFor="let person of personRes">
+        <p>Name: {{ person.name }}</p>
+        <p>Email: {{ person.email }}</p>
+        <p>Contact: {{ person.phone }}</p>
+        <p>Address: {{ person.address }}</p>
+    </div>
+    <br>
+    <h1 class="text-center">Profiles</h1>
+    <div class="d-flex justify-content-center profile">
+        <a href="https://www.facebook.com/profile.php?id=100004124477928" target="_blank"><img src="assets/img/facebook.png"></a>
+        <a href="https://github.com/luannguyen1410" target="_blank"><img src="assets/img/github-logo.png"></a>
+        <a href="https://www.linkedin.com/in/luan-nguyen-397ab21a9/" target="_blank"><img src="assets/img/linkedin.png"></a>
+    </div>
+</div>

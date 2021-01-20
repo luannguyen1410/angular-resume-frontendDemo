@@ -1,0 +1,11 @@
+<h1><b>- Experience</b></h1>
+<ul  *ngFor="let exp of expRes">
+    <li>{{ exp.companyName }}
+        <br><br>
+        <ul>
+            <li>Work time: {{ exp.workTime }}</li>
+            <li>Location: {{ exp.location }}</li>
+            <li>Job: {{ exp.jobDescription }}</li>
+        </ul>
+    </li>
+</ul>

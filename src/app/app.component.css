@@ -1,39 +1,7 @@
-/* The sidebar menu */
-.sidenav {
-    height: 100%; 
-    width: 250px; 
-    position: fixed;
-    z-index: 1; 
-    top: 0; 
-    left: 0;
-    background-color: purple;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-.sidenav img {
-  margin-left: 15px;
-  width: 90%;
-  height: 30%;
+/* Style page content */
+.main {
+  margin-left: 350px;
+  padding: 20px 30px;
+  font-size: 20px;
 }
 
-  /* The navigation menu links */
-  .sidenav p {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-  }
-
-  /* Style page content */
-  .main {
-    margin-left: 300px;
-    padding: 0px 10px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav p {font-size: 14px;}
-  }

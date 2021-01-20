@@ -1,56 +1,24 @@
 <!-- Side navigation -->
-<div class="sidenav">
-    <img src="assets/img/profile.jpg" class="rounded-circle">    
-    
-    <div *ngFor="let person of personRes">
-        <p>Name: {{ person.name }}</p>
-        <p>Email: {{ person.email }}</p>
-        <p>Contact: {{ person.phone }}</p>
-    </div>
-</div>
+<app-person></app-person>
 
-  <!-- Page content -->
+<!-- Page content -->
 <div class="main">
     <h1 class="text-center">{{ title }}</h1>
     <hr>
+    <div class="container">
+        <app-edu></app-edu>
+    </div>
     
-    
     <div class="container">
-        <b>Education</b>:
-        <ul *ngFor="let edu of eduRes">
-            <li>{{ edu.school }}
-                <ul>
-                    <li>{{ edu.major}}</li>
-                    <li>{{ edu.gpa }}</li>
-                    <li>{{ edu.degree }}</li>
-                    <li>{{ edu.graduatedDate }}</li>
-                </ul>
-            </li>
-        </ul>
+        <app-skill></app-skill>
+        <app-fra></app-fra>
     </div>
+
     <div class="container">
-        <b>Skills</b>:
-        <ul *ngFor="let skill of skillRes">
-            <li>{{ skill.language }}: {{skill.description}}</li>
-        </ul>
-        <b>Framework</b>:
-        <ul *ngFor="let framework of frameworkRes">
-            <li>{{ framework.frameworkName }}: {{framework.description }}</li>
-        </ul>
+        <app-exp></app-exp>
     </div>
+
     <div class="container">
-        <b>Experience</b>:
-        <div *ngFor="let exp of expRes">
-            <p><b>- {{ exp.companyName }}</b>: {{ exp.workTime}}<br>
-                Location: {{ exp.location }}<br>
-                Job: {{ exp.jobDescription }}
-            </p>
-        </div>
-    </div>
-    <div class="container">
-        <b>Honors</b>:
-        <ul *ngFor="let achievement of achieveRes">
-            <li>{{ achievement.title }}, {{ achievement.description }}</li>
-        </ul>
+        <app-achievement></app-achievement>
     </div>
 </div>

@@ -1,0 +1,12 @@
+<h1><b>- Education</b></h1>
+<ul *ngFor="let edu of eduRes">
+    <li><b>{{ edu.school }}</b>
+        <br><br>
+        <ul>
+            <li>Major: {{ edu.major}}</li>
+            <li>GPA: {{ edu.gpa }}</li>
+            <li>Degree: {{ edu.degree }}</li>
+            <li>Graduation: {{ edu.graduatedDate }}</li>
+        </ul>
+    </li>
+</ul>
