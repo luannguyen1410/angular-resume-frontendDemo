@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'resume-demo-app';
+  title = 'My Profile';
 
   private API_URL = 'http://localhost:8080/SpringMVCDemo';
   
